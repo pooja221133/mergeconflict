@@ -1,10 +1,10 @@
-console.log('change from main');
-console.log("hello33333333")
-function hello()
-{
-    console.log("good")
-}
-function test()
-{
-    console.log("test")
-}
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Hello from Node.js server!");
+});
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
