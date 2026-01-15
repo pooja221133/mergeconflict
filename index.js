@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+console.log("app meassge")
 app.get("/", (req, res) => {
   res.send("Hello from Node.js server!");
 });
